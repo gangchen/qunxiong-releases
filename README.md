@@ -12,13 +12,15 @@ Qunxiong 是开发代号，正式名还没定。
 
 ## 下载
 
-到 [Releases](https://github.com/gangchen/qunxiong-releases/releases/latest) 下载最新的 `Qunxiong-<版本>-arm64.dmg`。
+最新版是 **v0.9.1**（2026-09-27）：[下载 Qunxiong-0.9.1-arm64.dmg](https://github.com/gangchen/qunxiong-releases/releases/download/v0.9.1/Qunxiong-0.9.1-arm64.dmg)。
+
+历次版本都在 [Releases](https://github.com/gangchen/qunxiong-releases/releases)，每一版的发布说明里写了改动和 SHA-256 校验值。
 
 ## 系统要求
 
 - Apple 芯片的 Mac（M1 及以后）。Intel 芯片的 Mac 暂不支持。
 - macOS 13 或更新。
-- 约 350 MB 磁盘空间。
+- 约 400 MB 磁盘空间。
 
 ## 安装
 
@@ -33,9 +35,15 @@ Qunxiong 是开发代号，正式名还没定。
 xattr -dr com.apple.quarantine /Applications/Qunxiong.app
 ```
 
+## 版本记录
+
+- **v0.9.1**（2026-09-27）：加入音效与音乐；启动先到标题页；新增设置页（全屏、音量、切到别的窗口时静音、战斗回放速度、出征前的结算演出）和「关于」页。
+- **v0.8.3**（2026-09-27）：行前排与击穿攻城、开局选主城、每战随机的天时 / 阵法 / 副将 / 敌计、第四幕「万国」、备战界面重做、新增 119 张美术。
+
 ## 说明
 
 - 游戏完全离线，不联网，也不收集任何数据。
+- 有音效和配乐。「设置」里可以分别调总音量、音乐和音效；切到别的窗口时默认静音，也可以关掉。
 - 存档在 `~/Library/Application Support/Qunxiong`，只保存在你自己的电脑上。
 - 更新时下载新版 dmg，替换「应用程序」里的旧版即可。存档会保留，新版能读入旧版的存档。
 - 下载的文件可以用每个版本发布说明里的 SHA-256 核对：`shasum -a 256 Qunxiong-<版本>-arm64.dmg`。
@@ -48,4 +56,4 @@ xattr -dr com.apple.quarantine /Applications/Qunxiong.app
 
 本仓库只用来分发试玩安装包，不含源代码。安装包请勿修改或转售。
 
-游戏内的字体 Noto Sans SC、Noto Serif SC、Ma Shan Zheng 和 JetBrains Mono 按 SIL Open Font License 1.1 授权，随包附有许可全文。
+游戏内的字体 Noto Sans SC、Noto Serif SC、Ma Shan Zheng 和 JetBrains Mono 按 SIL Open Font License 1.1 授权，随包附有许可全文。游戏里的音效和音乐由程序合成，不含第三方音频素材。
