@@ -8,7 +8,7 @@ Qunxiong 是开发代号，正式名还没定。
 - 第二幕在舆图上逐州攻取、光复洛阳，第三幕远征四海、决战大秦。每座城都标了星级，星级越高越强，奖励也越多。
 - 第四幕「万国」一路打到欧罗巴、非洲和新大陆，之后是无尽的「万世」。
 
-赢了才前进；输了扣 1 点天命，原地再战这一关。天命最多 3 点，用完这一局就结束。官阶从布衣起步，在一级通关大秦才解锁下一级，越往上越难。
+主城可以驻军、升级城墙。野战军打光了不算输，城破才算输。赢了才前进；输了扣 1 点天命，原地再战这一关。天命最多 3 点，用完这一局就结束。官阶从布衣起步，在一级通关大秦才解锁下一级，越往上越难。
 
 这是开发中的试玩版，数值和界面还会改。
 
@@ -42,12 +42,12 @@ Qunxiong 是开发代号，正式名还没定。
 
 ## 下载
 
-最新版是 **v0.10.1**（2026-09-28）：
+最新版是 **v0.10.4**（2026-09-29）：
 
 | 系统 | 下载 |
 |---|---|
-| Mac（Apple 芯片） | [Qunxiong-0.10.1-arm64.dmg](https://github.com/gangchen/qunxiong-releases/releases/download/v0.10.1/Qunxiong-0.10.1-arm64.dmg) |
-| Windows（64 位） | 安装版 [Qunxiong-0.10.1-x64-setup.exe](https://github.com/gangchen/qunxiong-releases/releases/download/v0.10.1/Qunxiong-0.10.1-x64-setup.exe)（推荐）；免安装版 [Qunxiong-0.10.1-x64.zip](https://github.com/gangchen/qunxiong-releases/releases/download/v0.10.1/Qunxiong-0.10.1-x64.zip) |
+| Mac（Apple 芯片） | [Qunxiong-0.10.4-arm64.dmg](https://github.com/gangchen/qunxiong-releases/releases/download/v0.10.4/Qunxiong-0.10.4-arm64.dmg) |
+| Windows（64 位） | 安装版 [Qunxiong-0.10.4-x64-setup.exe](https://github.com/gangchen/qunxiong-releases/releases/download/v0.10.4/Qunxiong-0.10.4-x64-setup.exe)（推荐）；免安装版 [Qunxiong-0.10.4-x64.zip](https://github.com/gangchen/qunxiong-releases/releases/download/v0.10.4/Qunxiong-0.10.4-x64.zip) |
 
 历次版本都在 [Releases](https://github.com/gangchen/qunxiong-releases/releases)，每一版的发布说明里写了改动和 SHA-256 校验值。
 
@@ -89,6 +89,7 @@ xattr -dr com.apple.quarantine /Applications/Qunxiong.app
 
 ## 版本记录
 
+- **v0.10.4**（2026-09-29）：主城驻军（枪兵营、弓兵营可放进主城格，敌营攻城先打驻军）；城墙四级与六项工事，修城令改为升一级城墙、工事三选一；只有城破才算输，打到一方打完为止（第 9 回合起粮尽）；刘备·携民渡江改为利滚利但涨得慢、范围更窄；第一战不再必败；官阶从第 2 关起拉开，敌方加项逐关上场；第一至第三幕按真人试玩重新校准；横屏军令手牌改成扑克牌式；新增 15 张美术。
 - **v0.10.1**（2026-09-28）：推进规则重做：赢了才前进，输了扣 1 点天命、原地再战，天命最多 3 点。第二、三幕的城分星级、有默认路线；敌军分五档（散兵、郡兵、劲旅、名将、决战），名将城有敌方幕僚和宝物。官阶改为进阶式，从布衣起逐级解锁。宝物分随将与随营，备战时可以调将。战场主城换成城楼图，新增 34 张美术。适配 16:9 屏幕。难度按新规则整体重新校准。
 - **v0.9.2**（2026-09-27）：本机排行榜（最远征程、一击封神、最强一战、累计输出、势如破竹，各留前 10 名）；新增 Windows 版（64 位）；安装包不再附带 Steam 组件。
 - **v0.9.1**（2026-09-27）：加入音效与音乐；启动先到标题页；新增设置页（全屏、音量、切到别的窗口时静音、战斗回放速度、出征前的结算演出）和「关于」页。
@@ -100,7 +101,7 @@ xattr -dr com.apple.quarantine /Applications/Qunxiong.app
 - 有音效和配乐。「设置」里可以分别调总音量、音乐和音效；切到别的窗口时默认静音，也可以关掉。
 - 存档只保存在你自己的电脑上：Mac 在 `~/Library/Application Support/Qunxiong`，Windows 在 `%APPDATA%\Qunxiong`。
 - 更新时下载新版，替换旧版即可：Mac 把新版拖进「应用程序」覆盖旧版；Windows 直接运行新版安装程序（免安装版换掉整个文件夹）。存档会保留，新版能读入旧版的存档。
-- v0.9.x 没打完的那一局照旧规则打完，新开的局用新规则。用 v0.10.1 存过档以后，不要再退回 v0.9.x：旧版读不懂新存档，会把它另存起来、从头开始。
+- v0.9.x 没打完的那一局照旧规则打完；v0.10.1 没打完的那一局按新规则接着打，原来的城防加成折成城墙等级。用 v0.10.4 存过档以后，不要再退回旧版：旧版读不懂新存档，会把它另存起来、从头开始。
 - 下载的文件可以用每个版本发布说明里的 SHA-256 核对：Mac 在「终端」里运行 `shasum -a 256 <文件名>`，Windows 在 PowerShell 里运行 `Get-FileHash <文件名>`。
 
 ## 反馈
